@@ -74,6 +74,7 @@ button {
     fill: none;
     background-color: transparent;
     color: inherit;
+    cursor: pointer;
 }
 
 a {
@@ -91,15 +92,16 @@ svg {
 /* General Styling */
 
 .heading-container {
-    --heading-max-width: 1440px;
+    --heading-max-width: 1200px;
     --heading-padding: 2rem;
 
     width: min(var(--heading-max-width), 100% - var(--heading-padding));
     margin-inline: auto;
+    margin-bottom: 1rem;
 }
 
 .body-container {
-    --body-max-width: 1300px;
+    --body-max-width: 1000px;
     --body-padding: 2rem;
 
     width: min(var(--body-max-width), 100% - var(--body-padding));
@@ -123,14 +125,15 @@ svg {
 .nav-list {
     display: flex;
     gap: 2.5rem;
+    align-items: center;
 }
 
 .primary-navigation {
     flex: 1;
     margin-left: 1rem;
-    padding: 1rem;
+    margin-bottom: 0.6rem;
     align-items: center;
-    margin-bottom: 0.5rem;
+
 }
 
 
@@ -143,15 +146,43 @@ nav li:last-of-type {
     display: none;
 }
 
+.info {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
 /*-- Mobile only --*/
 @media (max-width: 45em) {
+  
+    .image-container
+    {
+        order: 1;
+    }
+
+    .info
+    {
+        gap: 1rem;
+        align-items: center;
+        order: 2;
+    }
+
+
+    .even-columns {
+        grid-auto-flow: row;
+    }
+
     .nav-list {
         flex-direction: column;
+        align-items: flex-start;
         gap: 1rem;
     }
 
     nav li:last-of-type {
         margin-left: 0;
+        margin-top: 1.5rem;
     }
 
     .primary-navigation {
@@ -216,6 +247,13 @@ nav li:last-of-type {
     color: var(--clr-medium-gray);
 }
 
+.heading-dec {
+    font-weight: var(--fw-bold);
+    font-size: 4.4rem;
+    color: var(--clr-almost-black);
+    line-height: 1;
+}
+
 /* Text */
 
 /* Background */
@@ -228,6 +266,27 @@ nav li:last-of-type {
 }
 
 /* Background */
+
+
+
+.button[data-type="inverted"] {
+    background-color: transparent;
+    border: 1px solid var(--clr-medium-gray);
+    color: var(--clr-medium-gray);
+    padding: 0.4rem 1rem;
+}
+
+.button {
+    background-color: var(--clr-almost-black);
+    border: none;
+    outline: none;
+    border-radius: 0.45rem;
+    color: var(--clr-almost-white);
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    font-weight: var(--fw-bold);
+    max-width: fit-content;
+}
 
 .flex {
     display: flex;
