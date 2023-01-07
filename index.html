@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DROPDOWN-NAVIGATION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="./script.js" defer></script>
 </head>
+
 <body>
-    
-    <header>
+
+    <header class="heading-container">
+        <div class="heading-bar">
+            <div class="flex gap-200">
+                <a href="#"><img src="./images/logo.svg" alt="snap"></a>
+                <!--Primary nav-->
+                <nav class="primary-navigation" id="primary-navigation">
+                    <ul role="list" class="nav-list">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="visually-hidden">Menu</span>
+            </button>
+
+            <!--Auth btns-->
+            <div style="display:none" class="flex gap-100">
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+        </div>
 
     </header>
 
@@ -16,7 +45,8 @@
 
     </main>
 
-   
+
 
 </body>
+
 </html>
