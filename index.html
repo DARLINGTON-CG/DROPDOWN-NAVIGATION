@@ -15,28 +15,31 @@
 
     <header class="heading-container">
         <div class="heading-bar">
-            <div class="flex gap-200">
-                <a href="#"><img src="./images/logo.svg" alt="snap"></a>
-                <!--Primary nav-->
-                <nav class="primary-navigation" id="primary-navigation">
-                    <ul role="list" class="nav-list">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <a href="#"><img src="./images/logo.svg" alt="snap"></a>
+            <!--Primary nav-->
+            <nav  class="primary-navigation" id="primary-navigation">
+                <ul role="list" class="nav-list">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="last-item">
+                        <div class="flex gap-100">
+                            <button>Login</button>
+                            <button>Register</button>
+                        </div>
+                    </li>
+                </ul>
+
+            </nav>
+
 
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
                 <span class="visually-hidden">Menu</span>
             </button>
 
             <!--Auth btns-->
-            <div style="display:none" class="flex gap-100">
-                <button>Login</button>
-                <button>Register</button>
-            </div>
+
         </div>
 
     </header>
