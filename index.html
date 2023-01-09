@@ -19,8 +19,42 @@
             <!--Primary nav-->
             <nav class="primary-navigation" id="primary-navigation">
                 <ul role="list" class="nav-list">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Company</a></li>
+                    <li>
+                        <a href="#">Features</a>
+                        <ul role="list" class="dropdown">
+                            <li class="flex gap-50">
+                                <img src="./images/icon-todo.svg" alt="todo">
+                                <p>Todo List</p>
+                            </li>
+                            <li class="flex gap-50">
+                                <img src="./images/icon-calendar.svg" alt="calendar">
+                                <p>Calendar</p>
+                            </li>
+                            <li class="flex gap-50">
+                                <img src="./images/icon-reminders.svg" alt="reminders">
+                                <p>Reminders</p>
+                            </li>
+                            <li class="flex gap-50">
+                                <img src="./images/icon-planning.svg" alt="planning">
+                                <p>Planning</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Company</a>
+                        <ul role="list" class="dropdown">
+                            
+                            <li>
+                                 <p>History</p>
+                            </li>
+                            <li>
+                                 <p>Our Team</p>
+                            </li>
+                            <li>
+                                 <p>Blog</p>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">About</a></li>
                     <!--Auth btns-->
@@ -45,7 +79,7 @@
                 <p>Get your team in sync,no matter your location. Streamline processes, create team rituals, and watch
                     productivity soar.</p>
                 <button class="button">Learn more</button>
-                <ul class="flex" role="list">
+                <ul class="flex separated" role="list">
                     <li><img src="images/client-databiz.svg" alt="databiz"></li>
                     <li><img src="images/client-audiophile.svg" alt="audiophile"></li>
                     <li><img src="images/client-meet.svg" alt="meet"></li>
@@ -53,12 +87,11 @@
                 </ul>
             </div>
 
-                <div class="image-container">
-                    <img src="images/image-hero-desktop.png" alt="hero">
-                </div>
+            <div class="image-container">
+                <img src="images/image-hero-desktop.png" alt="hero">
+            </div>
         </div>
     </main>
-
 
 
 </body>
