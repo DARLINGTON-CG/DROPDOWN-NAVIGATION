@@ -13,6 +13,15 @@
     --fs-100: 1rem;
     --fs-200: 1.3rem;
     --fs-300: 4rem;
+
+
+}
+
+
+@media (max-width: 45em) {
+    :root {
+        --fs-300: 2.3rem;
+    }
 }
 
 /* Resets */
@@ -179,7 +188,10 @@ nav>ul>li:last-of-type {
     box-shadow: 1px 1px 30px hsla(0, 2%, 58%, 0.438);
     padding: 1.3rem;
     border-radius: 1rem;
+    transition: all 0.4s ease-in-out;
+
 }
+
 
 
 
@@ -189,17 +201,57 @@ nav>ul>li:last-of-type {
     align-items: center;
 }
 
-ul a:hover  {
+ul a:hover {
     color: var(--clr-almost-black);
 }
 
-li:hover .dropdown
-{
+li:hover .dropdown {
     display: flex;
+
+}
+
+
+.mobile-image {
+    display: none;
+}
+
+
+.brands
+{
+    margin-top: 2.5rem;
 }
 
 /*-- Mobile only --*/
 @media (max-width: 45em) {
+
+    .info>p {
+        text-align: center;
+    }
+
+    .brands img {
+        width: 70%;
+    }
+
+    .brands
+    {
+        margin-top: 1rem;
+    }
+
+    .heading-container {
+        margin-bottom: 0;
+    }
+
+    .body-container {
+        width: 100%;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
 
     .dropdown {
         position: relative;
@@ -208,8 +260,7 @@ li:hover .dropdown
         border-radius: 0;
     }
 
-    li:hover .dropdown
-    {
+    li:hover .dropdown {
         display: flex;
     }
 
@@ -218,9 +269,12 @@ li:hover .dropdown
     }
 
     .info {
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
         order: 2;
+        justify-content: center;
+        margin-inline: 1rem;
+        margin-bottom: 5rem;
     }
 
 
@@ -241,7 +295,7 @@ li:hover .dropdown
 
     .primary-navigation {
         position: fixed;
-        inset: 0 0 0 35%;
+        inset: 0 0 -5% 35%;
         background: var(--clr-almost-white);
         padding: 7rem 2rem 0rem;
         box-shadow: 10rem 10rem 1000vh black;
@@ -303,7 +357,7 @@ li:hover .dropdown
 
 .heading-dec {
     font-weight: var(--fw-bold);
-    font-size: 4.4rem;
+    font-size: var(--fs-300);
     color: var(--clr-almost-black);
     line-height: 1;
 }
@@ -340,7 +394,18 @@ li:hover .dropdown
     padding: 0.7rem 1rem;
     font-weight: var(--fw-bold);
     max-width: fit-content;
+    transition: background-color 200ms ease-out;
+    border: 1px solid transparent;
+
 }
+
+.button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid var(--clr-medium-gray);
+}
+
+
 
 .flex {
     display: flex;
@@ -403,3 +468,9 @@ li:hover .dropdown
         translate: 0%;
     }
 }
+
+
+
+/* Animation */
+
+.scale-height {}
