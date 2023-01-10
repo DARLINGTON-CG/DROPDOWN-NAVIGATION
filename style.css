@@ -241,7 +241,10 @@ li:hover > div > img
 /*-- Mobile only --*/
 @media (max-width: 45em) {
     
-
+    .heading-dec
+    {
+        text-align: center;
+    }
 
     .info>p {
         text-align: center;
