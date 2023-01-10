@@ -18,11 +18,13 @@
 }
 
 
-@media (max-width: 45em) {
+@media (max-width: 55em) {
     :root {
         --fs-300: 2.3rem;
     }
 }
+
+
 
 /* Resets */
 body,
@@ -106,23 +108,24 @@ svg {
 
     width: min(var(--heading-max-width), 100% - var(--heading-padding));
     margin-inline: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
 }
 
 .body-container {
-    --body-max-width: 1000px;
+    --body-max-width: 850px;
     --body-padding: 2rem;
 
     width: min(var(--body-max-width), 100% - var(--body-padding));
     margin-inline: auto;
+    margin-bottom:3rem;
 }
 
 .even-columns {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr 1fr;
-    gap: 3.5rem;
+    gap: 5rem;
 }
 
 .heading-bar {
@@ -188,8 +191,7 @@ nav>ul>li:last-of-type {
     box-shadow: 1px 1px 30px hsla(0, 2%, 58%, 0.438);
     padding: 1.3rem;
     border-radius: 1rem;
-    transition: all 0.4s ease-in-out;
-
+    transition: all 100ms ease-in-out;
 }
 
 
@@ -207,7 +209,6 @@ ul a:hover {
 
 li:hover .dropdown {
     display: flex;
-
 }
 
 
@@ -218,8 +219,12 @@ li:hover .dropdown {
 
 .brands
 {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
+
+ .brands img {
+        width: 80%;
+    }
 
 /*-- Mobile only --*/
 @media (max-width: 45em) {
@@ -388,10 +393,10 @@ li:hover .dropdown {
     background-color: var(--clr-almost-black);
     border: none;
     outline: none;
-    border-radius: 0.45rem;
+    border-radius: 0.8rem;
     color: var(--clr-almost-white);
     cursor: pointer;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 1.8rem;
     font-weight: var(--fw-bold);
     max-width: fit-content;
     transition: background-color 200ms ease-out;
@@ -470,7 +475,3 @@ li:hover .dropdown {
 }
 
 
-
-/* Animation */
-
-.scale-height {}
