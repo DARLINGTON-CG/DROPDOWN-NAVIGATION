@@ -323,7 +323,7 @@ li:hover > div > img
         inset: 0 0 -5% 35%;
         background: var(--clr-almost-white);
         padding: 7rem 2rem 0rem;
-        box-shadow: 100rem 100rem 1000vh black;
+        box-shadow: 100px 100px 1000vh black, 100px 100px 1000vh black,100px 100px 1000vh black;
         transform: translateX(100%);
         transition: transform 500ms ease-in-out;
         visibility: hidden;
